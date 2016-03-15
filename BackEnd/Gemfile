@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'rails',     '4.2.6'
+gem 'passenger', '5.0.26'
+gem 'pg',        '0.18.4'
+
+gem 'rack-cors',   '0.4.0'
+gem 'hobo_fields', '2.2.5'
+gem 'json',        '1.8.2'
+gem 'jbuilder',    '2.4.1'
+gem 'bcrypt',      '3.1.11'

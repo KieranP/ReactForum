@@ -1,0 +1,19 @@
+.topic {
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .posts {
+    margin-bottom: 10px;
+
+    .post {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #000;
+    }
+  }
+}

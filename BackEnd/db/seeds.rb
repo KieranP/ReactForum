@@ -1,0 +1,18 @@
+user1 = User.create!(username: 'k776', password: 'testing1', email: 'kieran776@gmail.com')
+user2 = User.create!(username: 'kieran776', password: 'testing2', email: 'kieran776@hotmail.com')
+
+board1 = Board.create(name: "Announcements", description: "Any announcements will be made here.")
+topic1x1 = board1.topics.create(name: "Release 1.0")
+post1x1x1 = topic1x1.posts.create(body: "We are pleased to announce the first stable release!", user: user1)
+post1x1x2 = topic1x1.posts.create(body: "+1 Awesome news!", user: user2)
+topic1x2 = board1.topics.create(name: "Release 1.1")
+post1x2x1 = topic1x2.posts.create(body: "We are releasing a quick bugfix release!", user: user1)
+post1x2x2 = topic1x2.posts.create(body: "+1 Thanks, issue fixed!", user: user2)
+
+board2 = Board.create(name: "Support", description: "Need help? Ask it here :-)")
+topic2x1 = board2.topics.create(name: "Frequently Asked Questions")
+post2x1x1 = topic2x1.posts.create(body: "What is this? A forum built with ReactJS and Rails.", user: user1)
+post2x1x2 = topic2x1.posts.create(body: "This looks cool! Awesome work!", user: user2)
+topic2x2 = board2.topics.create(name: "Not Able to Login Properly?")
+post2x2x1 = topic2x2.posts.create(body: "Follow these steps to login in again...", user: user1)
+post2x2x2 = topic2x2.posts.create(body: "Still not able to login. Is it even implemented?", user: user2)

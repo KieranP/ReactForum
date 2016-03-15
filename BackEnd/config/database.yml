@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: ReactForumDevelopment
+  username: reactjs
+  password: reactjs
+
+test:
+  <<: *default
+  database: ReactForumTest
+  username: reactjs
+  password: reactjs
+
+production:
+  <<: *default
+  database: ReactForumProduction
+  username: reactjs
+  password: reactjs
